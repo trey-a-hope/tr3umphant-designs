@@ -1,0 +1,44 @@
+<mat-grid-list cols="3" rowHeight="1:2" gutterSize="30px">
+    <!-- Hidden Gems -->
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Hidden Gems</mat-card-title>
+                <mat-card-subtitle>Version 1.1.0</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    A resource app for the city of Dayton that displays the best musicians, artist, technicians, chefs,
+                    entertainers, and much more.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button (click)="openUrl(hiddenGems.ios)">IOS</button>
+                <button mat-button (click)="openUrl(hiddenGems.android)">ANDROID</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+    <!-- tr3Designs -->
+    <mat-grid-tile>
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>tr3Designs</mat-card-title>
+                <mat-card-subtitle>Version 3.0.0</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+                alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>
+                    A resource app for the city of Dayton that displays the best musicians, artist, technicians, chefs,
+                    entertainers, and much more.
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button (click)="openUrl(tr3Designs.ios)">IOS</button>
+                <button mat-button (click)="openUrl(tr3Designs.android)">ANDROID</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>

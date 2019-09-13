@@ -76,7 +76,7 @@ Apple Watch Series 4 - 40mm (1.57 Inch)
 Apple Watch Series 1, Apple Watch Series 2, Apple Watch Series 3 - 42mm (1.65 Inch)
     312 x 390
 Apple Watch Series 4 - 44mm (1.78 Inch)
-    448 x 368
+    448 x 368 
 
 ## How to Add Local Project to Bit Bucket
 git init

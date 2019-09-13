@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomePageComponent } from './widgets/home-page/home-page.component';
-import { AboutPageComponent } from './widgets/about-page/about-page.component';
-import { NotFoundPageComponent } from './widgets/not-found-page/not-found-page.component';
-import { ContactPageComponent } from './widgets/contact-page/contact-page.component';
-import { PortfolioPageComponent } from './widgets/portfolio-page/portfolio-page.component';
-import { BlogPageComponent } from './widgets/blog-page/blog-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
+import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 
 
 const routes: Routes = [
