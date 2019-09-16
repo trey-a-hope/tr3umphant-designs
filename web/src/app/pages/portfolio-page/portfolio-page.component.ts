@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UrlService } from 'src/app/services/url.service';
 
 @Component({
   selector: 'portfolio-page',
@@ -16,7 +17,7 @@ export class PortfolioPageComponent implements OnInit {
     'android': 'https://play.google.com/store/apps/details?id=com.io.tr3designs_flutter&hl=en_US'
   }
 
-  constructor() { }
+  constructor(public urlService: UrlService) { }
 
   ngOnInit() {
   }

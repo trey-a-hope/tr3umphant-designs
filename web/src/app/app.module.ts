@@ -18,6 +18,7 @@ import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.co
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { FooterComponent } from './widgets/footer/footer.component';
 import { CardWidgetComponent } from './widgets/card-widget/card-widget.component';
+import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CardWidgetComponent } from './widgets/card-widget/card-widget.component
     BlogPageComponent,
     FooterComponent,
     CardWidgetComponent,
+    PricingPageComponent,
   ],
   imports: [
     BrowserModule,

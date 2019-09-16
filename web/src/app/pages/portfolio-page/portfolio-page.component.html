@@ -1,5 +1,4 @@
-<mat-grid-list cols="3" rowHeight="1:2" gutterSize="30px">
-    <!-- Hidden Gems -->
+<!-- <mat-grid-list cols="3" rowHeight="1:2" gutterSize="30px">
     <mat-grid-tile>
         <mat-card class="example-card">
             <mat-card-header>
@@ -20,7 +19,6 @@
             </mat-card-actions>
         </mat-card>
     </mat-grid-tile>
-    <!-- tr3Designs -->
     <mat-grid-tile>
         <mat-card class="example-card">
             <mat-card-header>
@@ -41,4 +39,70 @@
             </mat-card-actions>
         </mat-card>
     </mat-grid-tile>
-</mat-grid-list>
+</mat-grid-list> -->
+
+<section id="portfolio" class="animated fadeIn" style="padding: 30px 0">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="orange-text animated zoomInRight"><strong>Portfolio</strong></h1>
+                <hr>
+                <h4 class="animated zoomInRight">Mobile apps are my specialty.</h4>
+                <p>See some of the apps I've developed.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <section class="feature-box">
+                    <div class="row features-big">
+                        <!-- Hidden Gems -->
+                        <div class="col-md-6 mb-r text-center" style="margin-bottom: 0 !important">
+                            <div class="card mb-4" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Fhidden_gems.jpg?alt=media&token=222e5806-bbfb-4b99-bbee-979648457645" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hidden Gems</h5>
+                                            <p class="card-text">A resource app for the city of Dayton that displays the
+                                                best musicians,
+                                                artist, technicians, chefs, entertainers, and much more.</p>
+                                            <p class="card-text"><small class="text-muted">Version 1.0.1</small></p>
+                                            <a class="btn btn-primary" (click)="urlService.openBlank(hiddenGems.ios)" style="color:white">iOS</a>
+                                            <a class="btn btn-primary" (click)="urlService.openBlank(hiddenGems.android)" style="margin-left: 20px; color: white">Android</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tr3Designs -->
+                        <div class="col-md-6 mb-r text-center" style="margin-bottom: 0 !important">
+                                <div class="card mb-4" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Ftr3designs.jpg?alt=media&token=fbf05e96-5992-496b-b170-8b5dbf037aff" class="card-img" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">tr3Designs</h5>
+                                                <p class="card-text">Shop from several custom made products at affordable prices. 
+                                                    Leave suggestions on what you would like to see built in the future. And finally, 
+                                                    get by the minute updates for new products that have been created just for you.</p>
+                                                <p class="card-text"><small class="text-muted">Version 3.0.0</small></p>
+                                                <a class="btn btn-primary" (click)="urlService.openBlank(tr3Designs.ios)" style="color:white">iOS</a>
+                                                <a class="btn btn-primary" (click)="urlService.openBlank(tr3Designs.android)" style="margin-left: 20px; color: white">Android</a>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>

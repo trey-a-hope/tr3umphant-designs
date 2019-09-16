@@ -6,6 +6,7 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
+import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,8 @@ const routes: Routes = [
   { path: 'portfolio', component: PortfolioPageComponent },
   { path: 'blog', component: BlogPageComponent },
   { path: 'contact', component: ContactPageComponent },
+  { path: 'pricing', component: PricingPageComponent },
+
   // { 
   //   path: 'product-detail', 
   //   component: ProductDetailComponent, 
