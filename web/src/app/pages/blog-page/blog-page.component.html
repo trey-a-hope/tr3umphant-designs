@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="orange-text animated zoomInRight"><strong>Blog</strong></h1>
+                <h1 class="animated zoomInRight" style="color: navy"><strong>Blog</strong></h1>
                 <hr>
                 <h4 class="animated zoomInRight">Follow the journey.</h4>
                 <p>Learn the process.</p>
@@ -20,7 +20,7 @@
                                     <h5 class="card-title">Dayton Tech Guide - Hidden Gems</h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk of the card's content.</p>
-                                    <a href="https://daytontechguide.com/test-this-new-app-for-daytons-artist-entrepreneur-community/?mc_cid=9351e5397c&mc_eid=cc9664f424&fbclid=IwAR019waR-XcIHFCtTWS3k5UBbgJOj3-tS1WjGWXw1_Gfh3pUn9gGnWdtSc8" class="btn btn-primary">Read More</a>
+                                    <button (click)="urlService.openBlank(blogOneUrl)" class="btn btn-primary">Read More</button>
                                 </div>
                             </div>
                         </div>

@@ -1,51 +1,8 @@
-<!-- <mat-grid-list cols="3" rowHeight="1:2" gutterSize="30px">
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <mat-card-header>
-                <mat-card-title>Hidden Gems</mat-card-title>
-                <mat-card-subtitle>Version 1.1.0</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                alt="Photo of a Shiba Inu">
-            <mat-card-content>
-                <p>
-                    A resource app for the city of Dayton that displays the best musicians, artist, technicians, chefs,
-                    entertainers, and much more.
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button (click)="openUrl(hiddenGems.ios)">IOS</button>
-                <button mat-button (click)="openUrl(hiddenGems.android)">ANDROID</button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <mat-card-header>
-                <mat-card-title>tr3Designs</mat-card-title>
-                <mat-card-subtitle>Version 3.0.0</mat-card-subtitle>
-            </mat-card-header>
-            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-                alt="Photo of a Shiba Inu">
-            <mat-card-content>
-                <p>
-                    A resource app for the city of Dayton that displays the best musicians, artist, technicians, chefs,
-                    entertainers, and much more.
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button (click)="openUrl(tr3Designs.ios)">IOS</button>
-                <button mat-button (click)="openUrl(tr3Designs.android)">ANDROID</button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-</mat-grid-list> -->
-
 <section id="portfolio" class="animated fadeIn" style="padding: 30px 0">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1 class="orange-text animated zoomInRight"><strong>Portfolio</strong></h1>
+                <h1 class="animated zoomInRight" style="color: navy"><strong>Portfolio</strong></h1>
                 <hr>
                 <h4 class="animated zoomInRight">Mobile apps are my specialty.</h4>
                 <p>See some of the apps I've developed.</p>
@@ -70,9 +27,8 @@
                                                 best musicians,
                                                 artist, technicians, chefs, entertainers, and much more.</p>
                                             <p class="card-text"><small class="text-muted">Version 1.0.1</small></p>
-                                            <a class="btn btn-primary" (click)="urlService.openBlank(hiddenGems.ios)" style="color:white">iOS</a>
-                                            <a class="btn btn-primary" (click)="urlService.openBlank(hiddenGems.android)" style="margin-left: 20px; color: white">Android</a>
-
+                                            <button class="btn btn-primary" (click)="urlService.openBlank(hiddenGems.ios)">iOS</button>
+                                            <button class="btn btn-primary" (click)="urlService.openBlank(hiddenGems.android)" style="margin-left: 20px">Android</button>
                                         </div>
                                     </div>
                                 </div>
@@ -92,8 +48,8 @@
                                                     Leave suggestions on what you would like to see built in the future. And finally, 
                                                     get by the minute updates for new products that have been created just for you.</p>
                                                 <p class="card-text"><small class="text-muted">Version 3.0.0</small></p>
-                                                <a class="btn btn-primary" (click)="urlService.openBlank(tr3Designs.ios)" style="color:white">iOS</a>
-                                                <a class="btn btn-primary" (click)="urlService.openBlank(tr3Designs.android)" style="margin-left: 20px; color: white">Android</a>
+                                                <button class="btn btn-primary" (click)="urlService.openBlank(tr3Designs.ios)">iOS</button>
+                                                <button class="btn btn-primary" (click)="urlService.openBlank(tr3Designs.android)" style="margin-left: 20px;">Android</button>
     
                                             </div>
                                         </div>
