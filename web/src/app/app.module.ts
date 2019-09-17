@@ -20,6 +20,8 @@ import { FooterComponent } from './widgets/footer/footer.component';
 import { CardWidgetComponent } from './widgets/card-widget/card-widget.component';
 import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +44,9 @@ import { PricingPageComponent } from './pages/pricing-page/pricing-page.componen
     MatCheckboxModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
