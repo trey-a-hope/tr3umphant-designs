@@ -17,14 +17,13 @@ export class PortfolioPageComponent implements OnInit {
     'android': 'https://play.google.com/store/apps/details?id=com.io.tr3designs_flutter&hl=en_US'
   }
 
+  public unreadReader = {
+    'android': ''
+  }
+
   constructor(public urlService: UrlService) { }
 
   ngOnInit() {
-  }
-
-
-  openUrl(url) {
-    window.open(url, "_blank");
   }
 
 }
