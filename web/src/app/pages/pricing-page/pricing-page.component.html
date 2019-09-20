@@ -3,15 +3,21 @@
         <div class="row">
             <div class="col">
                 <h1 class="animated zoomInRight" style="color: navy"><strong>Pricing</strong></h1>
-                <hr>
                 <h4 class="animated zoomInRight">See what package fits you best.</h4>
+                <hr>
+                <br>
+                <p>Each tier is specific to what type of business you need the app for.</p>
+                <br>
                 <div class="row features-big">
                     <!-- Basic -->
                     <div class="col-md-4 mb-r text-center" style="margin-bottom: 0 !important">
                         <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                <h4>Basic</h4>
+                            </div>
                             <img class="card-img-top" [src]="basicImageUrl" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Basic - $249, <span style="color: grey">$85 Deposit</span></h5>
+                                <h5 class="card-title">$249, <span style="color: grey">$85 Deposit</span></h5>
                                 <p class="card-text">Limited requirements. Firebase Database. 1-3 screens.</p>
                             </div>
                             <ul class="list-group list-group-flush">
@@ -26,9 +32,13 @@
                     <!-- Standard -->
                     <div class="col-md-4 mb-r text-center" style="margin-bottom: 0 !important">
                         <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                <h4>Standard</h4>
+                            </div>
                             <img class="card-img-top" [src]="standardImageUrl" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Standard - $499, <span style="color: grey">$170 Deposit</span></h5>
+                                <h5 class="card-title">$499, <span style="color: grey">$170 Deposit</span>
+                                </h5>
                                 <p class="card-text">RESTful APIs. Firebase Database. 3-7 screens. </p>
                             </div>
                             <ul class="list-group list-group-flush">
@@ -39,9 +49,13 @@
                     <!-- Premium -->
                     <div class="col-md-4 mb-r text-center" style="margin-bottom: 0 !important">
                         <div class="card" style="width: 18rem;">
+                            <div class="card-header">
+                                <h4>Premium</h4>
+                            </div>
                             <img class="card-img-top" [src]="premiumImageUrl" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">Premium - $999, <span style="color: grey">$335 Deposit</span></h5>
+                                <h5 class="card-title">$999, <span style="color: grey">$335 Deposit</span>
+                                </h5>
                                 <p class="card-text">RESTful APIs. Firebase Database, Storage, Messaging,
                                     Authentication. 7+ Screens.</p>
                             </div>
@@ -51,17 +65,12 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <p>For all packages, I include;</p>
                 <ul>
                     <li>App Submission, (pushing iOS and Android app to markets).</li>
                     <li>Splash Screen, (screen that displays when you first launch app).</li>
-
                 </ul>
-                <hr>
-                <h4 class="animated zoomInRight">Contract</h4>
-                <p>Before starting the project, I suggest viewing the contract for understanding small details.</p>
-                <button class="btn btn-primary" (click)="urlService.openBlank(contractUrl)">View
-                    Contract</button>
             </div>
         </div>
     </div>
