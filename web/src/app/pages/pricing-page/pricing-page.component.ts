@@ -11,6 +11,12 @@ export class PricingPageComponent implements OnInit {
   public basicImageUrl = 'https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Fbasic_pricing.jpg?alt=media&token=f7508a59-4eaf-4353-b706-1e4beb11b3ae';
   public standardImageUrl = 'https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Fstandard_pricing.jpg?alt=media&token=8c2bd444-7b99-4d52-bb72-325912116d03';
   public premiumImageUrl = 'https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Fpremium_pricing.jpg?alt=media&token=84413dd2-dbf2-4e2f-8ae0-9b3eb9511dcf';
+  public basicPrice = 350;
+  public basicDeposit = Math.ceil((this.basicPrice * 0.33) / 10) * 10;
+  public standardPrice = 800;
+  public standardDeposit = Math.ceil((this.standardPrice * 0.33) / 10) * 10;
+  public premiumPrice = 1500;
+  public premiumDeposit = Math.ceil((this.premiumPrice * 0.33) / 10) * 10;
 
   constructor(public urlService: UrlService) { }
 
