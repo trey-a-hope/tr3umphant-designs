@@ -15,7 +15,7 @@ export class PricingPageComponent implements OnInit {
   public basicDeposit = this.basicPrice * 0.5;
   public standardPrice = 4000;
   public standardDeposit = this.standardPrice * 0.5;
-  public premiumPrice = 5000;
+  public premiumPrice = 6000;
   public premiumDeposit = this.premiumPrice * 0.5;
 
   constructor(public urlService: UrlService) { }
