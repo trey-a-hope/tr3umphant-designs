@@ -29,12 +29,14 @@ samples, guidance on mobile development, and a full API reference.
 - Then go to PRODUCT -> ARCHIVE in XCODE
 
 # Create Angular App
-npm install -g @angular/cli
-ng new web
-cd web
-<!-- sudo ng serve --open -->
+- npm install -g @angular/cli
+- ng new web
+- cd web
+- sudo ng serve --open
+- sudo npm install
 - sudo ng build --prod
-# (1 time configuration)
+- sudo npm install -g firebase-tools
+- sudo firebase login
 - sudo firebase init
 - "(public directory) dist/web" 
 - "(dist/web/index.html already exists, overwrite?) NO"
