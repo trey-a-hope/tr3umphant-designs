@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UrlService } from 'src/app/services/url.service';
 
 @Component({
   selector: 'about-page',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public urlService: UrlService) { }
 
   ngOnInit() {
   }
