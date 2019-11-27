@@ -13,12 +13,37 @@
             <div class="col">
                 <section class="feature-box">
                     <div class="row features-big">
+                        <!-- Lit Pic -->
+                        <div class="col-md-6 mb-r text-center" style="margin-bottom: 0 !important">
+                            <div class="card mb-4" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Flitpic.jpg?alt=media&token=c5620c5f-42a7-4cc7-9c8c-d1602c1a4b53"
+                                            class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lit Pic</h5>
+                                            <p class="card-text">Create your own 3D printed lithophane by uploading pictures of your choice, color, and quantity. Light up every moment with a lithophane.</p>
+                                            <p class="card-text"><small class="text-muted">Version 3.0.0</small></p>
+                                            <button class="btn btn-primary"
+                                                (click)="showMessage('Coming Soon')">iOS</button>
+                                            <button class="btn btn-primary"
+                                                (click)="showMessage('Coming Soon')"
+                                                style="margin-left: 20px;">Android</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Hidden Gems -->
                         <div class="col-md-6 mb-r text-center" style="margin-bottom: 0 !important">
                             <div class="card mb-4" style="max-width: 540px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <img src="https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Fhidden_gems.jpg?alt=media&token=222e5806-bbfb-4b99-bbee-979648457645" class="card-img" alt="...">
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Fhidden_gems.jpg?alt=media&token=749955e6-97aa-486a-b355-b3f1bdd08179"
+                                            class="card-img" alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -27,56 +52,50 @@
                                                 best musicians,
                                                 artist, technicians, chefs, entertainers, and much more.</p>
                                             <p class="card-text"><small class="text-muted">Version 1.0.1</small></p>
-                                            <button class="btn btn-primary" (click)="urlService.openBlank(hiddenGems.ios)">iOS</button>
-                                            <button class="btn btn-primary" (click)="urlService.openBlank(hiddenGems.android)" style="margin-left: 20px">Android</button>
+                                            <button class="btn btn-primary"
+                                                (click)="urlService.openBlank(hiddenGems.ios)">iOS</button>
+                                            <button class="btn btn-primary"
+                                                (click)="urlService.openBlank(hiddenGems.android)"
+                                                style="margin-left: 20px">Android</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- tr3Designs -->
-                        <div class="col-md-6 mb-r text-center" style="margin-bottom: 0 !important">
-                                <div class="card mb-4" style="max-width: 540px;">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-4">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Ftr3designs.jpg?alt=media&token=fbf05e96-5992-496b-b170-8b5dbf037aff" class="card-img" alt="...">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h5 class="card-title">tr3Designs</h5>
-                                                <p class="card-text">Shop from several custom made products at affordable prices. 
-                                                    Leave suggestions on what you would like to see built in the future. And finally, 
-                                                    get by the minute updates for new products that have been created just for you.</p>
-                                                <p class="card-text"><small class="text-muted">Version 3.0.0</small></p>
-                                                <button class="btn btn-primary" (click)="urlService.openBlank(tr3Designs.ios)">iOS</button>
-                                                <button class="btn btn-primary" (click)="urlService.openBlank(tr3Designs.android)" style="margin-left: 20px;">Android</button>
-    
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                     </div>
                     <div class="row features-big">
-                        <!-- HEART -->
-                        <!-- <div class="col-md-6 mb-r text-center" style="margin-bottom: 0 !important">
+
+                        <!-- tr3Designs -->
+                        <div class="col-md-6 mb-r text-center" style="margin-bottom: 0 !important">
                             <div class="card mb-4" style="max-width: 540px;">
                                 <div class="row no-gutters">
                                     <div class="col-md-4">
-                                        <img src="https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Funread_reader.jpg?alt=media&token=254c761e-2e0b-4691-a1e4-874020bfab74" class="card-img" alt="...">
+                                        <img src="https://firebasestorage.googleapis.com/v0/b/tr3umphant-designs-bd77b.appspot.com/o/Images%2Ftr3designs.jpg?alt=media&token=792985fb-928f-4053-a04b-fd605865160d"
+                                            class="card-img" alt="...">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <h5 class="card-title">Unread Reader</h5>
-                                            <p class="card-text">Have you ever wanted to read your messages without marking them read? Wether it be for keeping that little reminder of a new message or wanting to read something someone said without them knowing you read it, this is the app for you.</p>
-                                            <p class="card-text"><small class="text-muted">Version 1.0.2</small></p>
-                                            <button class="btn btn-primary" (click)="urlService.openBlank(unreadReader.android)" style="margin-left: 20px">Android</button>
+                                            <h5 class="card-title">tr3Designs</h5>
+                                            <p class="card-text">Shop from several custom made products at affordable
+                                                prices.
+                                                Leave suggestions on what you would like to see built in the future. And
+                                                finally,
+                                                get by the minute updates for new products that have been created just
+                                                for you.</p>
+                                            <p class="card-text"><small class="text-muted">Version 3.0.0</small></p>
+                                            <button class="btn btn-primary"
+                                                (click)="urlService.openBlank(tr3Designs.ios)">iOS</button>
+                                            <button class="btn btn-primary"
+                                                (click)="urlService.openBlank(tr3Designs.android)"
+                                                style="margin-left: 20px;">Android</button>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
+
                 </section>
             </div>
         </div>

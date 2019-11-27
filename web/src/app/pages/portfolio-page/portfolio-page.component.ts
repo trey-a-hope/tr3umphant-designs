@@ -21,9 +21,18 @@ export class PortfolioPageComponent implements OnInit {
     'android': ''
   }
 
+  public litpic = {
+    'ios': '',
+    'android': ''
+  }
+
   constructor(public urlService: UrlService) { }
 
   ngOnInit() {
+  }
+
+  showMessage(message: String) {
+    alert(message);
   }
 
 }
