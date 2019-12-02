@@ -22,8 +22,8 @@ export class PortfolioPageComponent implements OnInit {
   }
 
   public litpic = {
-    'ios': '',
-    'android': ''
+    'ios': 'https://apps.apple.com/us/app/lit-pic-lithophane-creator/id1489604752',
+    'android': 'https://play.google.com/store/apps/details?id=com.io.litpic'
   }
 
   constructor(public urlService: UrlService) { }
