@@ -21,6 +21,7 @@ import { CardWidgetComponent } from './widgets/card-widget/card-widget.component
 import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServicePageComponent } from './pages/service-page/service-page.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     CardWidgetComponent,
     PricingPageComponent,
+    ServicePageComponent,
   ],
   imports: [
     BrowserModule,

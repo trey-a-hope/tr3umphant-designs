@@ -7,6 +7,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
+import { ServicePageComponent } from './pages/service-page/service-page.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: 'blog', component: BlogPageComponent },
   { path: 'contact', component: ContactPageComponent },
   { path: 'pricing', component: PricingPageComponent },
+  { path: 'service', component: ServicePageComponent },
+
 
   // { 
   //   path: 'product-detail', 
