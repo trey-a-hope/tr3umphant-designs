@@ -1,6 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { EmailService } from 'src/app/services/email.service';
+import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
+
+/** Error when invalid control is dirty, touched, or submitted. */
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
 
 @Component({
   selector: 'contact-page',
@@ -8,35 +18,51 @@ import { EmailService } from 'src/app/services/email.service';
   styleUrls: ['./contact-page.component.css']
 })
 export class ContactPageComponent implements OnInit {
+  nameFormControl = new FormControl('', [
+    Validators.required
+  ]);
 
-  contactForm;
+  emailFormControl = new FormControl('', [
+    Validators.required,
+    Validators.email
+  ]);
 
-  constructor(private formBuilder: FormBuilder, public emailService: EmailService) {
+  messageFormControl = new FormControl('', [
+    Validators.required
+  ]);
 
-    this.contactForm = this.formBuilder.group({
-      name: '',
-      email: '',
-      message: ''
-    });
+  matcher = new MyErrorStateMatcher();
+
+  constructor(public emailService: EmailService) {
   }
 
   ngOnInit() {
   }
 
-  onSubmit(data) {
-    var name = data['name'];
-    var email = data['email'];
-    var message = data['message'];
+  formIsValid = (): boolean => {
+    if(this.nameFormControl.valid && this.emailFormControl.valid && this.messageFormControl.valid){
+      return true;
+    }
+    return false;
+  }
 
-    this.emailService.sendEmail(`New Message From ${name}`, `Message: ${message}<br/>Email: ${email}`).subscribe(
-        (res) => {
-          if(res.status == 200){
-            alert('Email sent!');
-          }else{
-            alert('Could not send email at this time.');
+  onSubmit() {
+    if(this.formIsValid()){
+      var name = this.nameFormControl.value;
+      var email = this.emailFormControl.value;
+      var message = this.messageFormControl.value;
+      this.emailService.sendEmail(`New Message From ${name}`, `Message: ${message}<br/>Email: ${email}`).subscribe(
+          (res) => {
+            if(res.status == 200){
+              alert('Email sent!');
+            }else{
+              alert('Could not send email at this time.');
+            }
           }
-        }
-    );
+      );
+    }else{
+      alert('Please fix errors first.');
+    }
   }
 
 }

@@ -23,8 +23,11 @@ import { HttpModule }                   from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
 import { EmailService } from './services/email.service';
-
-
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+// import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,11 +50,16 @@ import { EmailService } from './services/email.service';
     MatButtonModule,
     MatCheckboxModule,
     MatToolbarModule,
+    MatStepperModule,
+    MatIconModule,
     MatCardModule,
     MatGridListModule,
+    MatFormFieldModule,
+    MatInputModule,
     MatTableModule,
     FormsModule,
     ReactiveFormsModule,
+    // FlexLayoutModule,
     HttpModule
   ],
   providers: [EmailService],

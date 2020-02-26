@@ -1,33 +1,16 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#" routerLink="/">Tr3umphant.Designs</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" routerLink="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" routerLink="/service">How It Works</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" routerLink="/portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                        <a class="nav-link" href="#" routerLink="/pricing">Pricing</a>
-                    </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" routerLink="/blog">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" routerLink="/contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <a mat-button [routerLink]="'/'" class="title"> Tr3umphant.Designs</a>
 
-</nav>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/about'"> <mat-icon>account_box</mat-icon> About </a>
+        <a mat-button [routerLink]="'/service'"> <mat-icon>code</mat-icon> How It Works </a>
+        <a mat-button [routerLink]="'/portfolio'"> <mat-icon>book</mat-icon> Portfolio </a>
+        <a mat-button [routerLink]="'/pricing'"> <mat-icon>attach_money</mat-icon> Pricing </a>
+        <a mat-button [routerLink]="'/blog'"> <mat-icon>computer</mat-icon> Blog </a>
+        <a mat-button [routerLink]="'/contact'"> <mat-icon>email</mat-icon> Contact </a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>

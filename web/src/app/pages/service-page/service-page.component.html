@@ -1,11 +1,34 @@
 <section id="about" class="animated fadeIn" style="padding: 30px 0">
     <div class="container">
 
-        <div class="row">
-            <div class="col">
-                <h1 class="animated zoomInRight" style="color: navy"><strong>How It Works</strong></h1>
-            </div>
-        </div>
+        <h1>How It Works</h1>
         <hr>
+        <mat-vertical-stepper>
+ 
+            <mat-step label="Plan">
+                <p>Identify & determine requirements of the app. This is usually in the form of a business call or in person meeting, depending on the clients location. Contracts and NDAs are also signed here.</p>
+            </mat-step>
+           
+            <mat-step label="Design">
+                <p>Designing of visual, which is a mockup of every screen of the app. A collection of screenshots will be send to the client for their approval. Along with details of functionality. If approved, the initial deposit will be paid before moving to step 3.</p>   
+            </mat-step>
+           
+            <mat-step label="Develop">
+              <p>Developing of the app. This is where the visuals are combied with code to build the application you need for both iOS & Android. The client will receive updates of the app in pre-production format on a frequent basis.</p>
+            </mat-step>
+
+            <mat-step label="Test">
+                <p>Testing of the ap amongst multiple users to ensure it works as espected. Anything that isn't identical to the initial requirements is fixed accordingly. This step is not left until the requirements are met.</p>
+            </mat-step>
+
+            <mat-step label="Launch">
+                <p>The app is no ready to go live on both the App Store for iOS and the Play Store for Android. Submission for both apps require approval on their respective markets, and typically takes between 5-7 days. The client will be notified once both are availlable.</p>
+            </mat-step>
+
+            <mat-step label="Support">
+                <p>Monitoring & refineing of the app takes place here. This includes insring the app still works as initally planned as the app begins to grow. If the client wants to add new features, they can do so per having another discussion with the me to get a new estimate of the work.</p>
+            </mat-step>
+           
+          </mat-vertical-stepper>
        </div>
 </section>
