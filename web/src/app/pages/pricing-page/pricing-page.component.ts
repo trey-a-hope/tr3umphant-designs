@@ -57,10 +57,6 @@ export class PricingPageComponent implements OnInit {
       }
     });  }
 
-  sendQuote = (): void => {
-    alert('Send Quote');
-  }
-
     /** Gets the total cost of all transactions. */
     getTotalCost = (): number => {
       return this.features.filter((feature) => feature.active).map(feature => feature.cost).reduce((acc, value) => acc + value, 0);

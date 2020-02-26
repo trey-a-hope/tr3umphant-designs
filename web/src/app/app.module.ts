@@ -6,7 +6,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-import {MatTableModule} from '@angular/material/table';
+import { MatTableModule } from '@angular/material/table';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
@@ -19,9 +19,11 @@ import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { FooterComponent } from './widgets/footer/footer.component';
 import { CardWidgetComponent } from './widgets/card-widget/card-widget.component';
 import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
-
+import { HttpModule }                   from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServicePageComponent } from './pages/service-page/service-page.component';
+import { EmailService } from './services/email.service';
+
 
 @NgModule({
   declarations: [
@@ -49,9 +51,10 @@ import { ServicePageComponent } from './pages/service-page/service-page.componen
     MatGridListModule,
     MatTableModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
