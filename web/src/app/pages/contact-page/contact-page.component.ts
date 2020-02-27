@@ -27,6 +27,10 @@ export class ContactPageComponent implements OnInit {
     Validators.email
   ]);
 
+  subjectFormControl = new FormControl('', [
+    Validators.required,
+  ]);
+
   messageFormControl = new FormControl('', [
     Validators.required
   ]);
@@ -40,7 +44,7 @@ export class ContactPageComponent implements OnInit {
   }
 
   formIsValid = (): boolean => {
-    if(this.nameFormControl.valid && this.emailFormControl.valid && this.messageFormControl.valid){
+    if(this.nameFormControl.valid && this.emailFormControl.valid && this.subjectFormControl.valid && this.messageFormControl.valid){
       return true;
     }
     return false;
@@ -50,8 +54,9 @@ export class ContactPageComponent implements OnInit {
     if(this.formIsValid()){
       var name = this.nameFormControl.value;
       var email = this.emailFormControl.value;
+      var subject = this.subjectFormControl.value;
       var message = this.messageFormControl.value;
-      this.emailService.sendEmail(`New Message From ${name}`, `Message: ${message}<br/>Email: ${email}`).subscribe(
+      this.emailService.sendEmail(subject, `Name: ${name}<br/>Message: ${message}<br/>Email: ${email}`).subscribe(
           (res) => {
             if(res.status == 200){
               alert('Email sent!');
