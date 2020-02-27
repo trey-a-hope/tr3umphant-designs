@@ -9,7 +9,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule } from '@angular/material/table';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ToolbarComponent } from './widgets/toolbar/toolbar.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
@@ -17,7 +16,6 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 import { BlogPageComponent } from './pages/blog-page/blog-page.component';
 import { FooterComponent } from './widgets/footer/footer.component';
-import { CardWidgetComponent } from './widgets/card-widget/card-widget.component';
 import { PricingPageComponent } from './pages/pricing-page/pricing-page.component';
 import { HttpModule }                   from '@angular/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -31,7 +29,6 @@ import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent,
     ToolbarComponent,
     AboutPageComponent,
     NotFoundPageComponent,
@@ -39,7 +36,6 @@ import {MatInputModule} from '@angular/material/input';
     PortfolioPageComponent,
     BlogPageComponent,
     FooterComponent,
-    CardWidgetComponent,
     PricingPageComponent,
     ServicePageComponent,
   ],

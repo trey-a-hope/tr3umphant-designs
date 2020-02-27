@@ -1,55 +1,41 @@
-<!-- 
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <a mat-button [routerLink]="'/'" class="title"> Tr3umphant.Designs</a>
-
-      <span class="menu-spacer"></span>
-      <div>
-        <a mat-button [routerLink]="'/about'"> <mat-icon>account_box</mat-icon> About </a>
-        <a mat-button [routerLink]="'/service'"> <mat-icon>code</mat-icon> How It Works </a>
-        <a mat-button [routerLink]="'/portfolio'"> <mat-icon>book</mat-icon> Portfolio </a>
-        <a mat-button [routerLink]="'/pricing'"> <mat-icon>attach_money</mat-icon> Pricing </a>
-        <a mat-button [routerLink]="'/blog'"> <mat-icon>computer</mat-icon> Blog </a>
-        <a mat-button [routerLink]="'/contact'"> <mat-icon>email</mat-icon> Contact </a>
+<header >
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar blue" id="navbar">
+    <div class="container"><a class="navbar-brand" href="#"><strong>Trey Hope</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link active" href="#about"><i class="fa fa-user"></i> About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-chalkboard"></i> How It Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio"><i class="fa fa-book"></i> Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing"><i class="fas fa-dollar-sign"></i> Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog"><i class="fa fa-comments"></i> Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-inbox"></i> Contact Me</a></li>
+        </ul>
       </div>
-    </mat-toolbar-row>
-  </mat-toolbar> -->
-  <header >
-    <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
-      <div class="container"><a class="navbar-brand" href="#"><strong>Trey A Hope</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link active" href="#about"><i class="fa fa-comments"></i> About Me</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects"><i class="fa fa-comments"></i> How It Works</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio"><i class="fa fa-comments"></i> Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#pricing"><i class="fa fa-comments"></i> Pricing</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa fa-comments"></i> Contact Me</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Intro Section-->
-    <section class="view hm-gradient" id="intro">
-      <div class="full-bg-img d-flex align-items-center">
-        <div class="container">
-          <div class="row no-gutters">
-            <div class="col-md-10 col-lg-6 text-center text-md-left margins">
-              <div class="white-text">
-                <div class="wow fadeInLeft" data-wow-delay="0.3s">
-                  <h1 class="h1-responsive font-bold mt-sm-5">Mobile App Developer</h1>
-                  <div class="h6">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt
-                    dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae
-                    iste.
-                  </div>
-                </div><br>
-                <div class="wow fadeInLeft" data-wow-delay="0.3s"><a class="btn btn-white dark-grey-text font-bold ml-0" href="https://www.youtube.com/watch?v=60ItHLz5WEA" target="_blank"><i class="fa fa-play mr-1"></i> View Demo</a><a class="btn btn-outline-white" href="#">Learn more</a></div>
+    </div>
+  </nav>
+  <!-- Intro Section-->
+  <section class="view hm-gradient" id="intro">
+    <div class="full-bg-img d-flex align-items-center">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-10 col-lg-6 text-center text-md-left margins">
+            <div class="white-text">
+              <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                <h1 class="h1-responsive font-bold mt-sm-5">Hello, I am Trey Hope</h1>
+                <div class="h6">
+                  Your friendly neighborhood mobile app developer.
+                </div>
+              </div><br>
+              <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                <a class="btn font-bold ml-0 darken-2 orange" href="#about">Learn More</a>
+                <!-- <a class="btn btn-outline-white" href="#">Learn more</a> -->
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </header>
+    </div>
+  </section> 
+</header>
