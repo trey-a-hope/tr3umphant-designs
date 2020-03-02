@@ -1,3 +1,8 @@
+# Firebase Deployments
+sudo firebase deploy --only hosting (hosting)
+sudo firebase deploy --only functions (functions)
+sudo firebase deploy (all)
+
 # tr3umphant_designs
 
 Mobile and web app for my software development business.
