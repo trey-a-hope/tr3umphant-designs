@@ -1,53 +1,100 @@
 <section class="text-center py-5 grey lighten-4" id="blog">
-    <div class="container">
-      <div class="wow fadeIn">
-        <h2 class="h1 pt-5 pb-3">Blog</h2>
-        <p class="px-5 mb-5 pb-3 lead blue-grey-text">
-            Follow the journey of a Mobile App Developer.
-        </p>
+  <div class="container">
+    <div class="wow fadeIn">
+      <h2 class="h1 pt-5 pb-3">Blog</h2>
+      <p class="px-5 mb-5 pb-3 lead blue-grey-text">
+        Follow the journey of a Mobile App Developer.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-r wow fadeInUp" data-wow-delay=".5s">
+        <mat-card class="example-card text-center">
+          <mat-card-header style="display: inline;">
+            <mat-card-title>Quick Code : Episode 1, Shopping Cart</mat-card-title>
+            <mat-card-subtitle>March 14th, 2020</mat-card-subtitle>
+          </mat-card-header>
+          <iframe src="https://www.youtube.com/watch?v=0b375fs8UCM" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <mat-card-content>
+            <p>
+              <strong>In this series, I will displaying how a UI is developed using Google mobile app development SDK,
+                Flutter.
+                A simple shopping cart page from my app, Lit Pic, will be the target of today's presentation.</strong>
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="urlService.openBlank('https://www.youtube.com/watch?v=0b375fs8UCM')">WATCH
+              NOW</button>
+
+          </mat-card-actions>
+        </mat-card>
       </div>
-      <div class="row">
-        <div class="col-md-4 mb-r wow fadeInUp" data-wow-delay=".3s">
-            <mat-card class="example-card text-center">
-                <mat-card-header style="display: inline;">
-                  <mat-card-title>What's The Biz? With TJ</mat-card-title>
-                  <mat-card-subtitle>October 23rd, 2019</mat-card-subtitle>
-                </mat-card-header>
-                <iframe  src="https://www.youtube.com/embed/nsbnywYbn6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <mat-card-content>
-                  <p>
-                    <strong>I sat down with TJ Cartwright to talk about my instiration for the company, long term goals, and current apps on the market.</strong>
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                    <button mat-button (click)="urlService.openBlank('https://www.youtube.com/embed/nsbnywYbn6g')">WATCH NOW</button>
+      <div class="col-md-4 mb-r wow fadeInUp" data-wow-delay=".5s">
+        <mat-card class="example-card text-center">
+          <mat-card-header style="display: inline;">
+            <mat-card-title>Code This : Episode 1, NBA Teams ListView</mat-card-title>
+            <mat-card-subtitle>March 12th, 2020</mat-card-subtitle>
+          </mat-card-header>
+          <iframe src="https://www.youtube.com/watch?v=Z_dhRr_3iEk" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <mat-card-content>
+            <p>
+              <strong>In Flutter development, everything is a widget, so I will be explaining the significance of using
+                multiple widgets to build rich mobile applications.
+                Today I am coding a basic list view that will display all of the 30 NBA Teams, while providing a pop-up
+                message when clicking a specific team.</strong>
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="urlService.openBlank('https://www.youtube.com/watch?v=Z_dhRr_3iEk')">WATCH
+              NOW</button>
 
-                </mat-card-actions>
-              </mat-card>
-        </div>
-        <div class="col-md-4 mb-r wow fadeInUp" data-wow-delay=".4s">
-            <mat-card class="example-card text-center">
-                <mat-card-header style="display: inline;">
-                  <mat-card-title>Dayton Tech Guide - Hidden Gems</mat-card-title>
-                  <mat-card-subtitle>September 19th, 2019</mat-card-subtitle>
-                </mat-card-header>
-                <img height="200"
-                src="https://firebasestorage.googleapis.com/v0/b/hidden-gems-e481d.appspot.com/o/Images%2FHiddenGems_1024x1024.png?alt=media&token=7be9dfe6-9138-476b-97ba-bdfdc6f88bec"
-                data-holder-rendered="true">                <mat-card-content>
-                  <p>
-                    <strong>Dayton Tech Guide was gracious enough to do a write up of the Hidden Gems app.</strong>
-                  </p>
-                </mat-card-content>
-                <mat-card-actions>
-                  <button mat-button (click)="urlService.openBlank(blogOneUrl)">READ MORE</button>
-                </mat-card-actions>
-              </mat-card>
-        </div>
-        <div class="col-md-4 mb-r wow fadeInUp" data-wow-delay=".5s">
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      <div class="col-md-4 mb-r wow fadeInUp" data-wow-delay=".3s">
+        <mat-card class="example-card text-center">
+          <mat-card-header style="display: inline;">
+            <mat-card-title>What's The Biz? With TJ</mat-card-title>
+            <mat-card-subtitle>October 23rd, 2019</mat-card-subtitle>
+          </mat-card-header>
+          <iframe src="https://www.youtube.com/embed/nsbnywYbn6g" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <mat-card-content>
+            <p>
+              <strong>I sat down with TJ Cartwright to talk about my instiration for the company, long term goals, and
+                current apps on the market.</strong>
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="urlService.openBlank('https://www.youtube.com/embed/nsbnywYbn6g')">WATCH
+              NOW</button>
 
-        </div>
+          </mat-card-actions>
+        </mat-card>
       </div>
     </div>
-  </section>
+    <div class="row">
+      <div class="col-md-4 mb-r wow fadeInUp" data-wow-delay=".4s">
+        <mat-card class="example-card text-center">
+          <mat-card-header style="display: inline;">
+            <mat-card-title>Dayton Tech Guide - Hidden Gems</mat-card-title>
+            <mat-card-subtitle>September 19th, 2019</mat-card-subtitle>
+          </mat-card-header>
+          <img height="200"
+            src="https://firebasestorage.googleapis.com/v0/b/hidden-gems-e481d.appspot.com/o/Images%2FHiddenGems_1024x1024.png?alt=media&token=7be9dfe6-9138-476b-97ba-bdfdc6f88bec"
+            data-holder-rendered="true">
+          <mat-card-content>
+            <p>
+              <strong>Dayton Tech Guide was gracious enough to do a write up of the Hidden Gems app.</strong>
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button (click)="urlService.openBlank(blogOneUrl)">READ MORE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
 
-
+    </div>
+  </div>
+</section>
